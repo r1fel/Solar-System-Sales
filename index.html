@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>Solar System Sales</title>
+</head>
+<body>
+  <Header>
+    <nav id="nav-bar">
+        <a href="#" ><img src="images/logo.png" id="logo" alt="Solar Soystem Sales Logo and home button"></a>
+        <section>
+          <a href="about.html" class="nav-text">About Us</a>
+          <a href="#product-section" class="nav-text disappear">Products</a>
+          <a href="#offer-form" class="nav-text">Get Offer!</a>
+        </section>
+        <a href="members.html" class="nav-text">Login</a>
+    </nav>
+  </Header>
+
+
+  <main>
+    <section id="hero-section">
+      <div id="hero-img">
+      </div>
+      <div id="hero-text">
+        <h1>Solar System Sales</h1>
+        <p>We are offering unique experiences and memories.</p>
+        <a href="#product-section" class="btn">Check our products</a>
+      </div>
+    </section>
+
+    <section id="product-section">
+      <h2>Our Products</h2>
+      <p>Rare and unique sortiment of planets</p>
+      <div id="planet-layout">
+        <div class="planet-card">
+          <img src="images/Mercury.jpg" alt="Planet Mercury">
+          <h3>Mercury</h3>
+          <p>Price: 120 Stardust</p>
+          <a href="https://solarsystem.nasa.gov/planets/mercury/overview/"class="small-btn" target="_blank">Get more info</a>
+        </div>
+        <div class="planet-card">
+          <img src="images/Mars.jpg" alt="Planet Mars">
+          <h3>Mars</h3>
+          <p>Price: 155 Stardust</p>
+          <a href="https://solarsystem.nasa.gov/planets/mars/overview/"class="small-btn" target="_blank">Get more info</a>
+        </div>
+        <div class="planet-card">
+          <img src="images/Venus.jpg" alt="Planet Venus">
+          <h3>Venus</h3>
+          <p>Price: 89 Stardust</p>
+          <a href="https://solarsystem.nasa.gov/planets/venus/overview/"class="small-btn" target="_blank">Get more info</a>
+        </div>
+        <div class="planet-card">
+          <img src="images/Uranus.jpg" alt="Planet Uranus">
+          <h3>Uranus</h3>
+          <p>Price: 35 Stardust</p>
+          <a href="https://solarsystem.nasa.gov/planets/uranus/overview/"class="small-btn" target="_blank">Get more info</a>
+        </div>
+        <div class="planet-card">
+          <img src="images/Saturn.jpg" alt="Planet Saturn">
+          <h3>Saturn</h3>
+          <p>Price: 190 Stardust</p>
+          <a href="https://solarsystem.nasa.gov/planets/saturn/overview/"class="small-btn" target="_blank">Get more info</a>
+        </div>
+        <div class="planet-card">
+          <img src="images/Neptune.jpg" alt="Planet Neptune">
+          <h3>Neptune</h3>
+          <p>Price: 145 Stardust</p>
+          <a href="https://solarsystem.nasa.gov/planets/neptune/overview/"class="small-btn" target="_blank">Get more info</a>
+        </div>
+        <div class="planet-card">
+          <img src="images/Earth.jpg" alt="Planet Earth">
+          <h3>Earth</h3>
+          <p>Price: 90 Stardust</p>
+          <a href="https://solarsystem.nasa.gov/planets/earth/overview/"class="small-btn" target="_blank">Get more info</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <form action="/purchase" id="offer-form">
+      <h4>Get Your Offer</h4>
+      <section id="pers-info-section">
+        <h3>Please enter your personal details.</h3>
+        <label for="first-name-input" class="hidden">First Name</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name-input"
+          minlength="3"
+          maxlength="20"
+          placeholder="First Name"
+          required
+          class="text-input"
+        />
+        <label for="last-name-input" class="hidden">Last Name</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name-input"
+          minlength="3"
+          maxlength="20"
+          placeholder="Last Name"
+          required
+          class="text-input"
+        />
+  
+        <label for="email-name-input" class="hidden">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email-input"
+          placeholder="Email"
+          required
+          class="text-input"
+        />
+      </section>
+
+      <h3>Which object are you interested in?</h3>
+      <p>Due to high demand, currently only one per customer.</p>
+
+      <label for="planet-selector" class="hidden"
+        >Choice of object</label>
+      <select name="planet" id="planet-selector" class="text-input">
+        <option value="mercury">Mercury</option>
+        <option value="venus">Venus</option>
+        <option value="earth">Earth</option>
+        <option value="mars">Mars</option>
+        <option value="jupiter">Jupiter</option>
+        <option value="saturn">Saturn</option>
+        <option value="uranus">Uranus</option>
+        <option value="Neptune">Neptune</option>
+      </select>
+
+      <h3>Choose preferred payment method</h3>
+
+      <div>
+        <label for="pay-pal">Pay Pal</label>
+        <input type="radio" name="pay-method" id="pay-pal" />
+      </div>
+      <div>
+        <label for="gold">Gold</label>
+        <input type="radio" name="pay-method" id="gold" />
+      </div>
+      <div>
+        <label for="installments">Pay in installments </label>
+        <input type="radio" name="pay-method" id="installments" />
+      </div>
+      <div>
+        <label for="btc">Bitcoin (not accepted any longer)</label>
+        <input type="radio" name="pay-method" id="btc" />
+      </div>
+      <div class="center">
+        <button class="small-btn">Get your Offer!</button>
+      </div>
+    </form>
+
+  </footer>
+</body>
+</html>

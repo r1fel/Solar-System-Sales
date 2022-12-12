@@ -1,0 +1,87 @@
+main {
+  color: var(--sec-color-500);
+  background-image: url("../images/wrong.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section{ 
+  margin: 0 1.5rem;
+}
+
+#wrapper{
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  box-shadow: 3px 3px 100px rgba(1,1,1,0.3);
+  border-radius: 2rem;
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.btn-base {
+ font-size: 1.2rem;
+ padding: 0.5rem 4rem;
+ text-decoration: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.btn-two {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative; 
+}
+.btn-two span {
+  z-index: 2; 
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(227, 116, 225, 0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+

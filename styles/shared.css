@@ -1,0 +1,132 @@
+
+html {
+  --prim-color-500: #e8688f;
+  --sec-color-500: #faeeeb;
+  --dark-color-500: #0e0d0f;
+  --dark-color-500-80: #0e0d0fce;
+  --dark-color-500-50: #0e0d0f7c;
+
+  --rainbow-1: #64ffe5;
+  --rainbow-2: #ffaa79;
+  --rainbow-3: #ff8ae2;
+  --rainbow-4: #f7ec73;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--dark-color-500); 
+  color: var(--sec-color-500);
+}
+
+nav{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 2rem);
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: var(--dark-color-500-80);
+  box-shadow: 0 8px 30px var(--dark-color-500-80);
+  height: 5.5rem;
+  padding: 0 1rem;
+}
+
+.nav-text {
+  text-decoration: none;
+  color: var(--sec-color-500);
+  font-size: 1.2rem;
+  transition: 0.3s;
+  border-bottom: 5px solid transparent;
+}
+
+.nav-text:hover {
+color: var(--prim-color-500);
+border-bottom: 5px solid var(--prim-color-500);
+cursor: pointer;
+}
+
+#logo {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+
+#logo:hover {
+  border-bottom: 0px solid transparent;
+}
+
+
+#nav-bar section {
+display: flex;
+justify-content: space-evenly;
+flex: 1;
+max-width: 32rem;
+}
+
+
+h1 {
+  font: 500 5rem "Space Grotesk";
+  margin: 1.5rem 0;
+  line-height: 4.8rem;
+}
+
+p {
+  font: 300 1rem "Space Grotesk";
+}
+
+.large-p {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.small-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: var(--prim-color-500);
+  color: var(--sec-color-500);
+  border-style: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 8px var(--dark-color-500-50);
+  transition: .7s;
+  cursor: pointer;
+}
+
+.small-btn:hover {
+  background-image: linear-gradient(90deg, var(--rainbow-1) 0%, var(--rainbow-2) 49%, var(--rainbow-3) 80%, var(--rainbow-4) 100%);
+}
+
+.text-input {
+  font: inherit;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px ;
+  border-style: none;
+  border-radius: 0.5rem;
+}
+
+.text-input:focus{
+  border: 2px solid var(--prim-color-500);
+}
+
+.text-input:hover{
+  background-color: rgb(217, 227, 236);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 574px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 3.8rem;
+  }
+
+  .disappear {
+    display: none;
+  }
+}

@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  /* height: 100vh; */
+  justify-content: center;
+  background-image: url(../images/night-sky.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  color: var(--sec-color-500);
+}
+
+nav a:nth-of-type(1) {
+  color: var(--prim-color-500);
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  max-width: 900px;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+}
+
+.cards-layout {
+  display: flex;
+  min-width: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  backdrop-filter: blur(3px);
+  background-color: rgba(55, 50, 75, 0.5);
+  box-shadow: 4px 4px 8px rgba(18, 18, 19, 0.959);
+  min-width: 200px;
+  max-width: 270px;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  flex: 1 1;
+
+}
+
+.profile-img {
+  width:95%;
+  border-radius: 50%;
+  background-color: var(--prim-color-500);
+
+}
+
+.profile-text {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.profile-name {
+  font-size: 1.7rem;
+}
+
+.profile-position {
+font-size: 1rem;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+svg {
+  color: var(--sec-color-500);
+  transition: .15s;
+}
+
+svg:hover {
+  color: var(--prim-color-500);
+  transform: scale(0.9);
+}

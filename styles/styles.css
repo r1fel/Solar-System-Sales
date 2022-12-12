@@ -1,0 +1,185 @@
+#hero-section {
+ height: 100vh;
+ min-height: 500px;
+}
+
+/* why does the hero image need a height? */
+#hero-img {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("../images/universe.jpg");
+  background-size: cover; 
+}
+
+
+#hero-text {
+  padding: 1.5rem 6rem 1.5rem 1.5rem ;
+  color: var(--sec-color-500);
+  position: relative;
+  width: 60%;
+  min-width: 200px;
+  max-width: 600px;
+  border-radius: 0 1.5rem 1.5rem 0;
+  background-color: var(--prim-color-500) ;
+  box-shadow: 5px 5px 32px 2px var(--dark-color-500-50);
+  top: -70%
+}
+
+.btn {
+  box-sizing: border-box;
+  margin: 1.5rem 0.3rem 1.5rem 0;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: var(--sec-color-500);
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 3px solid var(--sec-color-500);
+  box-shadow: 0 0 32px 1px rgba(169, 53, 121, 0.4);
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  color: var(--dark-color-500);
+  border-color: transparent;
+  background-image: linear-gradient(90deg, var(--rainbow-1) 0%, var(--rainbow-2) 49%, var(--rainbow-3) 80%, var(--rainbow-4) 100%);
+  transform: translateY(3px);
+  animation: slidebg 5s linear 2s infinite alternate;
+}
+
+
+h2 {
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: 2rem 0 0.7rem 0;
+}
+
+
+/* ------------product section------------- */
+
+#product-section {
+  background: linear-gradient(
+      217deg,rgba(27, 6, 26, 0.8),rgba(2, 18, 24, 0.566) 70.71%), linear-gradient(127deg, rgb(44, 38, 53), rgba(16, 35, 16, 0.608) 70.71%),
+    linear-gradient(336deg, rgba(36, 58, 80, 0.8), rgba(10, 10, 57, 0.246) 70.71%);
+}
+
+
+#product-section p {
+  text-align: center;
+  font-weight: 300;
+}
+
+#planet-layout {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:  1rem 0 4rem 0;
+}
+
+
+
+.planet-card {
+  width: 300px;
+  height: 408px;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem 0.5rem;
+  border-radius: 1rem;
+  border: 3px solid transparent;
+  transition: 0.1s;
+}
+
+.planet-card:hover {
+  border: 3px solid var(--prim-color-500);
+  background-color: rgb(28, 28, 28);
+  transform: translateY(3px);
+}
+
+.planet-card img {
+  width: inherit;
+  max-height: 300px;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 16px var(--dark-color-500-50);
+  margin-bottom: 1.5rem;
+}
+
+.planet-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 0.2px solid var(--sec-color-500);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 574px){
+  .planet-card {
+    max-width: 240px;
+    margin: 0.5rem 0.5rem;
+  }
+  .planet-card img {
+    max-height: 240px;
+    max-width: 240px;
+  }
+}
+
+/*------------- Get our offer form --------------- */
+
+footer {
+  background-color: var(--dark-color-500);
+  padding: 4rem 0 0 0;
+}
+
+#offer-form {
+  width: 50%;
+  min-width: 300px;
+  max-width: 420px ;
+  margin: 0 auto 30rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(136, 106, 134, 0.8);
+}
+
+#pers-info-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#planet-selector {
+  padding: 0.5rem;
+  text-align: center;
+}
+form h3 {
+  margin: 1rem 0;
+  font: 500 1.4rem "Space Grotesk";
+}
+
+
+h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+footer p {
+  font: 300 1rem "Space Grotesk";
+
+  margin: -1rem 0 1rem 0;
+ }
+
+footer input {
+  margin-bottom: 0.8rem;
+}
+
+
+footer label:hover {
+  background-color: #9287a7;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

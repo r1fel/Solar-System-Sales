@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/Astronaut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: saturate (50%);
+  height: calc(100vh - 5.5rem);
+  opacity: 90%;
+}
+
+#members-section {
+  padding: 3rem;
+  background-color: rgba(1, 1, 1, 0.7);
+  border-radius: 10px;
+}
+
+nav a:last-of-type {
+  color: var(--prim-color-500);
+}
+
+p {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  width: 30%;
+  min-width: 150px;
+  max-width: 300px;
+}
+
+#get-access-btn {
+  margin: 3rem 0 2rem 0;
+}
