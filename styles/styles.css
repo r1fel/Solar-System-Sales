@@ -204,3 +204,58 @@ footer label:hover {
   display: flex;
   justify-content: center;
 }
+.confirmBox {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 320px;
+  height: 300px;
+  background-color: var(--prim-color-500);
+  border-radius: 6px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: justify;
+  padding: 0 30px 30px;
+  color: var(--sec-color-500);
+  font: 300 0.7rem "Space Grotesk";
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.confirmBox.submit {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+}
+.confirmBox h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
+
+.confirmBox button {
+  display: inline-block;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  color: var(--prim-color-500);
+  border-style: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 8px var(--dark-color-500-50);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.confirmBox button:hover {
+  background-image: linear-gradient(
+    90deg,
+    var(--rainbow-1) 0%,
+    var(--rainbow-2) 49%,
+    var(--rainbow-3) 80%,
+    var(--rainbow-4) 100%
+  );
+}
