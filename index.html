@@ -1,93 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/shared.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <title>Solar System Sales</title>
-</head>
-<body>
-  <Header>
-    <nav id="nav-bar">
-        <a href="#" ><img src="images/logo.png" id="logo" alt="Solar Soystem Sales Logo and home button"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Solar System Sales</title>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <a href="#"
+          ><img
+            src="images/logo.png"
+            id="logo"
+            alt="Solar Soystem Sales Logo and home button"
+        /></a>
         <section>
           <a href="about.html" class="nav-text">About Us</a>
           <a href="#product-section" class="nav-text disappear">Products</a>
           <a href="#offer-form" class="nav-text">Get Offer!</a>
         </section>
         <a href="members.html" class="nav-text">Login</a>
-    </nav>
-  </Header>
+      </nav>
+    </header>
+    <header></header>
 
+    <main>
+      <section id="hero-section">
+        <div id="hero-img"></div>
+        <div id="hero-text">
+          <h1>Solar System Sales</h1>
+          <p>We are offering unique experiences and memories.</p>
+          <a href="#product-section" class="btn">Check our products</a>
+        </div>
+      </section>
 
-  <main>
-    <section id="hero-section">
-      <div id="hero-img">
-      </div>
-      <div id="hero-text">
-        <h1>Solar System Sales</h1>
-        <p>We are offering unique experiences and memories.</p>
-        <a href="#product-section" class="btn">Check our products</a>
-      </div>
-    </section>
+      <section id="product-section">
+        <h2>Our Products</h2>
+        <p>Rare and unique sortiment of planets</p>
+        <div id="planet-layout">
+          <div class="planet-card">
+            <img src="images/Mercury.jpg" alt="Planet Mercury" />
+            <h3>Mercury</h3>
+            <p>Price: 120 Stardust</p>
+            <a
+              href="https://solarsystem.nasa.gov/planets/mercury/overview/"
+              class="small-btn"
+              target="_blank"
+              >Get more info</a
+            >
+          </div>
+          <div class="planet-card">
+            <img src="images/Mars.jpg" alt="Planet Mars" />
+            <h3>Mars</h3>
+            <p>Price: 155 Stardust</p>
+            <a
+              href="https://solarsystem.nasa.gov/planets/mars/overview/"
+              class="small-btn"
+              target="_blank"
+              >Get more info</a
+            >
+          </div>
+          <div class="planet-card">
+            <img src="images/Venus.jpg" alt="Planet Venus" />
+            <h3>Venus</h3>
+            <p>Price: 89 Stardust</p>
+            <a
+              href="https://solarsystem.nasa.gov/planets/venus/overview/"
+              class="small-btn"
+              target="_blank"
+              >Get more info</a
+            >
+          </div>
+          <div class="planet-card">
+            <img src="images/Uranus.jpg" alt="Planet Uranus" />
+            <h3>Uranus</h3>
+            <p>Price: 35 Stardust</p>
+            <a
+              href="https://solarsystem.nasa.gov/planets/uranus/overview/"
+              class="small-btn"
+              target="_blank"
+              >Get more info</a
+            >
+          </div>
+          <div class="planet-card">
+            <img src="images/Saturn.jpg" alt="Planet Saturn" />
+            <h3>Saturn</h3>
+            <p>Price: 190 Stardust</p>
+            <a
+              href="https://solarsystem.nasa.gov/planets/saturn/overview/"
+              class="small-btn"
+              target="_blank"
+              >Get more info</a
+            >
+          </div>
+          <div class="planet-card">
+            <img src="images/Neptune.jpg" alt="Planet Neptune" />
+            <h3>Neptune</h3>
+            <p>Price: 145 Stardust</p>
+            <a
+              href="https://solarsystem.nasa.gov/planets/neptune/overview/"
+              class="small-btn"
+              target="_blank"
+              >Get more info</a
+            >
+          </div>
+          <div class="planet-card">
+            <img src="images/Earth.jpg" alt="Planet Earth" />
+            <h3>Earth</h3>
+            <p>Price: 90 Stardust</p>
+            <a
+              href="https://solarsystem.nasa.gov/planets/earth/overview/"
+              class="small-btn"
+              target="_blank"
+              >Get more info</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <section id="product-section">
-      <h2>Our Products</h2>
-      <p>Rare and unique sortiment of planets</p>
-      <div id="planet-layout">
-        <div class="planet-card">
-          <img src="images/Mercury.jpg" alt="Planet Mercury">
-          <h3>Mercury</h3>
-          <p>Price: 120 Stardust</p>
-          <a href="https://solarsystem.nasa.gov/planets/mercury/overview/"class="small-btn" target="_blank">Get more info</a>
-        </div>
-        <div class="planet-card">
-          <img src="images/Mars.jpg" alt="Planet Mars">
-          <h3>Mars</h3>
-          <p>Price: 155 Stardust</p>
-          <a href="https://solarsystem.nasa.gov/planets/mars/overview/"class="small-btn" target="_blank">Get more info</a>
-        </div>
-        <div class="planet-card">
-          <img src="images/Venus.jpg" alt="Planet Venus">
-          <h3>Venus</h3>
-          <p>Price: 89 Stardust</p>
-          <a href="https://solarsystem.nasa.gov/planets/venus/overview/"class="small-btn" target="_blank">Get more info</a>
-        </div>
-        <div class="planet-card">
-          <img src="images/Uranus.jpg" alt="Planet Uranus">
-          <h3>Uranus</h3>
-          <p>Price: 35 Stardust</p>
-          <a href="https://solarsystem.nasa.gov/planets/uranus/overview/"class="small-btn" target="_blank">Get more info</a>
-        </div>
-        <div class="planet-card">
-          <img src="images/Saturn.jpg" alt="Planet Saturn">
-          <h3>Saturn</h3>
-          <p>Price: 190 Stardust</p>
-          <a href="https://solarsystem.nasa.gov/planets/saturn/overview/"class="small-btn" target="_blank">Get more info</a>
-        </div>
-        <div class="planet-card">
-          <img src="images/Neptune.jpg" alt="Planet Neptune">
-          <h3>Neptune</h3>
-          <p>Price: 145 Stardust</p>
-          <a href="https://solarsystem.nasa.gov/planets/neptune/overview/"class="small-btn" target="_blank">Get more info</a>
-        </div>
-        <div class="planet-card">
-          <img src="images/Earth.jpg" alt="Planet Earth">
-          <h3>Earth</h3>
-          <p>Price: 90 Stardust</p>
-          <a href="https://solarsystem.nasa.gov/planets/earth/overview/"class="small-btn" target="_blank">Get more info</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
- <footer>
+    <footer>
       <div class="offer-container">
         <form action="/purchase" id="offer-form">
           <h4>Get Your Offer</h4>
@@ -118,7 +161,7 @@
             <div class="input-field">
               <label for="email-name-input" class="hidden">Email</label>
               <input
-                type="email"
+                type="text"
                 name="email"
                 id="email-input"
                 placeholder="Email"
@@ -172,8 +215,7 @@
       </div>
       <div class="confirmBox" id="confirmBox">
         <h4>Thank You</h4>
-        <p>
-        </p>
+        <p></p>
         <button type="button" class="confirmButton">Confirm</button>
       </div>
     </footer>
