@@ -131,4 +131,7 @@ const openConfirmBox = function () {
 let confirmButton = document.querySelector("#confirmButton");
 confirmBox.addEventListener("click", function () {
   confirmBox.classList.remove("submit");
+  firstName.value = "";
+  lastName.value = "";
+  email.value = "";
 });
